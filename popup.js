@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function (event) {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    document.getElementById("title").value = tabs[0].title;
+  });
+});
+
 document
   .getElementById("bookmarkForm")
   .addEventListener("submit", async (event) => {
