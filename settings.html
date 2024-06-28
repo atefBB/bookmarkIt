@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark to GitHub Settings</title>
+  </head>
+  <body>
+    <h3>Settings</h3>
+    <form id="settingsForm">
+      <input type="text" id="token" placeholder="GitHub Token" required />
+      <input type="text" id="owner" placeholder="GitHub Owner" required />
+      <input type="text" id="repo" placeholder="GitHub Repo" required />
+      <input
+        type="text"
+        id="path"
+        placeholder="File Path (e.g., bookmarks.md)"
+        required
+      />
+      <input type="submit" value="Save" />
+    </form>
+    <p id="status"></p>
+    <script src="settings.js"></script>
+  </body>
+</html>

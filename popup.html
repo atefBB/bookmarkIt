@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark to GitHub</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 200px;
+      }
+      input[type="text"],
+      input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Add Bookmark</h3>
+    <form id="bookmarkForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="submit" value="Add Bookmark" />
+    </form>
+    <p id="status"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
